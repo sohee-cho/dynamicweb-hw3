@@ -6,6 +6,8 @@ const addNums = () => {
     document.getElementById("result").innerHTML = sum;
 };
 
+const btnAdd = document.getElementById("add");
+btnAdd.addEventListener("click", addNums);
 
 const multiplyNums = () => {
     let num3 = document.getElementById("num3").value;
@@ -14,6 +16,8 @@ const multiplyNums = () => {
     document.getElementById("result2").innerHTML = multiply;
 };
 
+const btnMultiply = document.getElementById("multiply");
+btnMultiply.addEventListener("click", multiplyNums);
 
 const divideNums = () => {
     const num5 = document.getElementById("num5").value;
@@ -21,6 +25,9 @@ const divideNums = () => {
     const divide = num5 / num6;
     document.getElementById("result3").innerHTML = divide;
 };
+
+const btnDivide = document.getElementById("divide");
+btnDivide.addEventListener("click", divideNums);
 
 
 const subtractNums = () => {
@@ -30,6 +37,8 @@ const subtractNums = () => {
     document.getElementById("result4").innerHTML = subtract;
 };
 
+const btnSubtract = document.getElementById("subtract");
+btnSubtract.addEventListener("click", subtractNums);
 
 
 const divideNumsFixed = () => {
@@ -40,7 +49,8 @@ const divideNumsFixed = () => {
     document.getElementById("result5").innerHTML = divideFixed;
 };
 
-
+const btnDivideFixed = document.getElementById("dividefixed");
+btnDivideFixed.addEventListener("click", divideNumsFixed);
 
 const leftOver = () => {
     const firstNum = document.getElementById("firstNum").value;
@@ -49,13 +59,8 @@ const leftOver = () => {
     document.getElementById("remainder").innerHTML = remainder;
 };
 
+const btnModulo = document.getElementById("modulo");
+btnModulo.addEventListener("click", leftOver);
 
-
-
-window.onload = function () {
-    const btnAdd = document.getElementById(“add”);
-
-btnAdd.addEventListener(“click”, addNums);
-   }
 
 
